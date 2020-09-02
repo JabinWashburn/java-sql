@@ -146,7 +146,7 @@ VALUES ('SHIRE', 'The Shire', 'Bilbo Baggins', '1 Hobbit Hole', 'Bag End', 111, 
 
 ```
 
-- [ ] **_update *Bilbo Baggins* record so that the postal code changes to *"11122"*_**
+- [x] **_update *Bilbo Baggins* record so that the postal code changes to *"11122"*_**
 
   <details><summary>hint</summary>
 
@@ -154,6 +154,10 @@ VALUES ('SHIRE', 'The Shire', 'Bilbo Baggins', '1 Hobbit Hole', 'Bag End', 111, 
   </details>
 
 ```SQL
+
+UPDATE customers
+SET postal_code = '11122'
+WHERE customer_id = 'SHIRE'
 
 ```
 
