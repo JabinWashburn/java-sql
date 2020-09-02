@@ -125,7 +125,7 @@ WHERE upper(contact_title) LIKE 'MARKET%'
 
 ```
 
-- [ ] **_add a customer record for_**
+- [x] **_add a customer record for_**
 - customer id is 'SHIRE'
 - company name is 'The Shire'
 - contact name is 'Bilbo Baggins'
@@ -139,6 +139,10 @@ WHERE upper(contact_title) LIKE 'MARKET%'
   </details>
 
 ```SQL
+
+INSERT INTO customers(customer_id, company_name, contact_name, address, city, postal_code, country)
+VALUES ('SHIRE', 'The Shire', 'Bilbo Baggins', '1 Hobbit Hole', 'Bag End', 111, 'Middle Earth' );
+
 
 ```
 
