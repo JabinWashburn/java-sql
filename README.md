@@ -77,7 +77,7 @@ WHERE phone in ('(010) 9984510')
 
 ```
 
-- [ ] **_list orders descending by the order date. The order with date 1998-05-06 should be at the top_**
+- [x] **_list orders descending by the order date. The order with date 1998-05-06 should be at the top_**
 
   <details><summary>hint</summary>
 
@@ -85,6 +85,10 @@ WHERE phone in ('(010) 9984510')
   </details>
 
 ```SQL
+
+SELECT order_date
+FROM orders
+ORDER BY order_date DESC
 
 ```
 
